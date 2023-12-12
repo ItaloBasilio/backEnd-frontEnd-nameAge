@@ -4,14 +4,20 @@ import { useNavigate } from 'react-router-dom';
 
 import H1 from '../../components/Title';
 import ContainerItens from '../../components/ContainerItens';
-
+import Button from '../../components/Button'
 
 import Avatar from '../../assets/avatar.svg';
 import arrow from '../../assets/arrow.svg';
 import Trash from '../../assets/trash.svg';
 
 
-import { Container, Image, Button, User } from './styles';
+
+import {
+  Container,
+  Image,
+  User
+
+} from './styles';
 
 
 function Users() {
@@ -31,7 +37,7 @@ function Users() {
 
   }, [])
 
- 
+
 
 
 
@@ -65,7 +71,7 @@ function Users() {
           ))}
         </ul>
 
-        <Button onClick={goBackPage}>  <img src={arrow} alt="seta" />Voltar  </Button>
+        <Button isBack={true} onClick={goBackPage}>  <img src={arrow} alt="seta" />Voltar  </Button>
 
 
       </ContainerItens>
