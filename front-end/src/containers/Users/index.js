@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react"; //hooks
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-import H1 from '../../components/Title'
+import H1 from '../../components/Title';
+import ContainerItens from '../../components/ContainerItens';
 
 
 import Avatar from '../../assets/avatar.svg';
@@ -10,7 +11,7 @@ import arrow from '../../assets/arrow.svg';
 import Trash from '../../assets/trash.svg';
 
 
-import { Container, Image, ContainerItens, Button, User } from './styles';
+import { Container, Image, Button, User } from './styles';
 
 
 function Users() {
@@ -50,7 +51,7 @@ function Users() {
   return (
     <Container>
       <Image src={Avatar} />
-      <ContainerItens>
+      <ContainerItens isBlur={true}>
         <H1>Usuários</H1>
 
         {/* Criamos uma UL e chamamos a array user, para listar todos os usuarios dentro do objeto */}
