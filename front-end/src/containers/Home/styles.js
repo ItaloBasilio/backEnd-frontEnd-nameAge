@@ -12,16 +12,7 @@ export const Container = styled.div`
     height: 100vh;
 `;
 
-export const H1 = styled.h1`
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 40px;
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 80px;
 
-`;
 
 export const ContainerItens = styled.div`
     background: linear-gradient(157.44deg, 

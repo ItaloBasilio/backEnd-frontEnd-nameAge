@@ -6,8 +6,9 @@ import { useNavigate } from 'react-router-dom';
 import People from '../../assets/people.svg';
 import arrow from '../../assets/arrow.svg';
 
+import H1 from '../../components/Title'
 
-import { Container, H1, Image, ContainerItens, InputLabel, Input, Button } from './styles';
+import { Container, Image, ContainerItens, InputLabel, Input, Button } from './styles';
 
 function App() {
   //Criando um estado
@@ -34,7 +35,7 @@ function App() {
   }
 
 
-
+  //props
   return (
     <Container>
       <Image src={People} />

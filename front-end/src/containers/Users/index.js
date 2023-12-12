@@ -2,13 +2,15 @@ import React, { useState, useEffect } from "react"; //hooks
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
+import H1 from '../../components/Title'
+
 
 import Avatar from '../../assets/avatar.svg';
 import arrow from '../../assets/arrow.svg';
 import Trash from '../../assets/trash.svg';
 
 
-import { Container, H1, Image, ContainerItens, Button, User } from './styles';
+import { Container, Image, ContainerItens, Button, User } from './styles';
 
 
 function Users() {
