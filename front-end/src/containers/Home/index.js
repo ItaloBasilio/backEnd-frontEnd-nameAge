@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react"; //hooks
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 import People from '../../assets/people.svg';
@@ -12,7 +12,7 @@ import { Container, H1, Image, ContainerItens, InputLabel, Input, Button } from 
 function App() {
   //Criando um estado
   const [users, setUsers] = useState([]);
-  const history = useHistory();
+  const navigate = useNavigate();
   const inputName = useRef()
   const inputAge = useRef()
 
@@ -29,7 +29,7 @@ function App() {
 
     setUsers([...users, newUser]);//... spread operator
 
-    history.push('/usuarios')
+    navigate('/usuarios')
 
   }
 
